@@ -11,60 +11,79 @@
     <link rel='stylesheet' href='css/uicons-regular-straight.css'>
     <title>با سلام</title>
 </head>
-
 <body>
-    <header class="pt-3  pb-12 px-4 ">
-        <div class="container-md p-0">
-            <!-- HEADER TOP -->
-            <div class="top-header d-flex justify-content-between">
-                <div>
-                    <div class="logo"><a href="/"><img src="image/basalam-logotype.svg" alt=""></a></div>
-                    <!-- FORM desktop -->
-                    <div class="d-none">
-                        <form action="">
-                            <i></i>
-                            <input type="text">
-                        </form>
+    <header>
+        <!-- header mobile -->
+        <div class="header-mobile d-lg-none pt-3  pb-12 px-4  bg-white">
+            <div class="container-md p-0">
+                <!-- HEADER TOP (mobile) -->
+                <div class="top-header d-flex justify-content-between">
+                    <div>
+                        <div class="logo">
+                            <a href="/"><img src="image/basalam-logotype.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="fs-5 fw-normal" href="">
+                            <i class="fi fi-rs-shop"></i>
+                        </a>
+    
+                        <a class="ms-3 fs-5 fw-normal" href="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
                     </div>
                 </div>
-                <div>
-                    <a class="fs-5 fw-normal" href="">
-                        <i class="fi fi-rs-shop"></i>
-                    </a>
-
-                    <a class="ms-3 fs-5 fw-normal" href="">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
+                <!-- header bottom (mobile) -->
+                <div class="mt-4 ">
+                    <form class="d-flex align-items-center rounded-1 " action="">
+                        <div class="opacity-75 px-12">
+                            <button class="btn" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <input class="w-100 border-0" type="text">
+                    </form>
                 </div>
-            </div>
-            <!-- header bottom mobile form -->
-            <div class="mt-4">
-                <form class="d-flex align-items-center rounded-1 " action="">
-                    <div class="opacity-75 px-12">
-                        <button class="btn" type="submit">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </div>
-                    <input class="w-100 border-0" type="text">
-                </form>
-            </div>
-            <!-- header bottom desktop navbar-->
-            <div class="navbar d-none">
-                <div class="container-fluid">
-
-                </div>
+    
             </div>
         </div>
+        <div class="header-desktop d-none d-lg-block bg-white">
+            <div class="top-header">
+                <a href=""></a>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="bottom-header"></div>
+        </div>
     </header>
-    <main></main>
-    <div class="navigation bg-white border-top">
+    <main>
+        <sec class="banner-1">
+            <div class="container-lg">
+                <img class="w-100"
+                    src="https://statics.basalam.com/public/photo/explore/aN/01-03/PAPrhG2vSOUjAJWC8doojpY93ISmUjx2DOyQgqIVSx7s1sbjbT.webp"
+                    alt="">
+            </div>
+        </sec>
+        <sec></sec>
+        <sec></sec>
+        <sec></sec>
+        <sec></sec>
+        <sec></sec>
+        <sec></sec>
+        <sec></sec>
+    </main>
+    <div class="navigation d-lg-none bg-white border-top">
         <div class="navigation-container d-flex justify-content-around align-items-center h-100">
             <a class="d-flex justify-content-center align-items-center flex-column" href="">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3IDIwLjk5OTlIN0M1LjMgMjAuOTk5OSA0IDE5LjY5OTkgNCAxNy45OTk5VjExLjM5OTlMMTIgMy4zOTk5TDIwIDExLjM5OTlWMTcuOTk5OUMyMCAxOS42OTk5IDE4LjcgMjAuOTk5OSAxNyAyMC45OTk5WiIgZmlsbD0iI0ZGNUMzOSIvPgo8cGF0aCBkPSJNMjIgMTQuNEMyMS43IDE0LjQgMjEuNSAxNC4zIDIxLjMgMTQuMUwxMiA0Ljc5OTk5TDIuNjk5OTkgMTQuMUMyLjI5OTk5IDE0LjUgMS43IDE0LjUgMS4zIDE0LjFDMC45IDEzLjcgMC45IDEzLjEgMS4zIDEyLjdMMTIgMkwyMi43IDEyLjdDMjMuMSAxMy4xIDIzLjEgMTMuNyAyMi43IDE0LjFDMjIuNSAxNC4zIDIyLjMgMTQuNCAyMiAxNC40WiIgZmlsbD0iIzAwMDAwMCIvPgo8L3N2Zz4K" alt="">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3IDIwLjk5OTlIN0M1LjMgMjAuOTk5OSA0IDE5LjY5OTkgNCAxNy45OTk5VjExLjM5OTlMMTIgMy4zOTk5TDIwIDExLjM5OTlWMTcuOTk5OUMyMCAxOS42OTk5IDE4LjcgMjAuOTk5OSAxNyAyMC45OTk5WiIgZmlsbD0iI0ZGNUMzOSIvPgo8cGF0aCBkPSJNMjIgMTQuNEMyMS43IDE0LjQgMjEuNSAxNC4zIDIxLjMgMTQuMUwxMiA0Ljc5OTk5TDIuNjk5OTkgMTQuMUMyLjI5OTk5IDE0LjUgMS43IDE0LjUgMS4zIDE0LjFDMC45IDEzLjcgMC45IDEzLjEgMS4zIDEyLjdMMTIgMkwyMi43IDEyLjdDMjMuMSAxMy4xIDIzLjEgMTMuNyAyMi43IDE0LjFDMjIuNSAxNC4zIDIyLjMgMTQuNCAyMiAxNC40WiIgZmlsbD0iIzAwMDAwMCIvPgo8L3N2Zz4K"
+                    alt="">
                 <span>خانه</span>
             </a>
             <a class="d-flex justify-content-center align-items-center flex-column" href="">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDE4QzUuNiAxOCAyIDE0LjQgMiAxMEMyIDUuNiA1LjYgMiAxMCAyQzE0LjQgMiAxOCA1LjYgMTggMTBDMTggMTQuNCAxNC40IDE4IDEwIDE4Wk0xMCA0QzYuNyA0IDQgNi43IDQgMTBDNCAxMy4zIDYuNyAxNiAxMCAxNkMxMy4zIDE2IDE2IDEzLjMgMTYgMTBDMTYgNi43IDEzLjMgNCAxMCA0WiIgZmlsbD0iIzRDNEM0QyIvPgo8cGF0aCBkPSJNMjEgMjJDMjAuNyAyMiAyMC41IDIxLjkgMjAuMyAyMS43TDE3LjMgMTguN0MxNi45IDE4LjMgMTYuOSAxNy43IDE3LjMgMTcuM0MxNy43IDE2LjkgMTguMyAxNi45IDE4LjcgMTcuM0wyMS43IDIwLjNDMjIuMSAyMC43IDIyLjEgMjEuMyAyMS43IDIxLjdDMjEuNSAyMS45IDIxLjMgMjIgMjEgMjJaIiBmaWxsPSIjNEM0QzRDIi8+Cjwvc3ZnPgo=" alt="">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDE4QzUuNiAxOCAyIDE0LjQgMiAxMEMyIDUuNiA1LjYgMiAxMCAyQzE0LjQgMiAxOCA1LjYgMTggMTBDMTggMTQuNCAxNC40IDE4IDEwIDE4Wk0xMCA0QzYuNyA0IDQgNi43IDQgMTBDNCAxMy4zIDYuNyAxNiAxMCAxNkMxMy4zIDE2IDE2IDEzLjMgMTYgMTBDMTYgNi43IDEzLjMgNCAxMCA0WiIgZmlsbD0iIzRDNEM0QyIvPgo8cGF0aCBkPSJNMjEgMjJDMjAuNyAyMiAyMC41IDIxLjkgMjAuMyAyMS43TDE3LjMgMTguN0MxNi45IDE4LjMgMTYuOSAxNy43IDE3LjMgMTcuM0MxNy43IDE2LjkgMTguMyAxNi45IDE4LjcgMTcuM0wyMS43IDIwLjNDMjIuMSAyMC43IDIyLjEgMjEuMyAyMS43IDIxLjdDMjEuNSAyMS45IDIxLjMgMjIgMjEgMjJaIiBmaWxsPSIjNEM0QzRDIi8+Cjwvc3ZnPgo="
+                    alt="">
                 <span>بازارگردی</span>
             </a>
             <a class="d-flex justify-content-center align-items-center flex-column" href="">
@@ -72,16 +91,18 @@
                 <span>سبدخرید</span>
             </a>
             <a class="d-flex justify-content-center align-items-center flex-column" href="">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIyIDIyTDE2LjcgMTlIMTFDOS43MDAwMSAxOSA4LjQwMDAxIDE4LjUgNy41MDAwMSAxNy41QzcuMTAwMDEgMTcuMSA3LjEwMDAxIDE2LjUgNy41MDAwMSAxNi4xQzcuOTAwMDEgMTUuNyA4LjUwMDAxIDE1LjcgOC45MDAwMSAxNi4xQzkuNDAwMDEgMTYuNyAxMC4yIDE3IDExIDE3SDE3LjNMMjAgMTguNlYxMkMyMCAxMS4yIDE5LjcgMTAuNCAxOS4xIDkuODk5OTVDMTguNyA5LjQ5OTk1IDE4LjcgOC44OTk5NSAxOS4xIDguNDk5OTVDMTkuNSA4LjA5OTk1IDIwLjEgOC4wOTk5NSAyMC41IDguNDk5OTVDMjEuNSA5LjM5OTk1IDIyIDEwLjcgMjIgMTJWMjJaIiBmaWxsPSIjNjY2NjY2Ii8+CjxwYXRoIGQ9Ik0yIDE4VjZDMiA0LjMgMy4zIDMgNSAzSDE1QzE2LjcgMyAxOCA0LjMgMTggNlYxMkMxOCAxMy43IDE2LjcgMTUgMTUgMTVINy4zTDIgMThaTTUgNUM0LjQgNSA0IDUuNCA0IDZWMTQuNkw2LjcgMTNIMTVDMTUuNiAxMyAxNiAxMi42IDE2IDEyVjZDMTYgNS40IDE1LjYgNSAxNSA1SDVaIiBmaWxsPSIjNjY2NjY2Ii8+Cjwvc3ZnPgo=" alt="">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIyIDIyTDE2LjcgMTlIMTFDOS43MDAwMSAxOSA4LjQwMDAxIDE4LjUgNy41MDAwMSAxNy41QzcuMTAwMDEgMTcuMSA3LjEwMDAxIDE2LjUgNy41MDAwMSAxNi4xQzcuOTAwMDEgMTUuNyA4LjUwMDAxIDE1LjcgOC45MDAwMSAxNi4xQzkuNDAwMDEgMTYuNyAxMC4yIDE3IDExIDE3SDE3LjNMMjAgMTguNlYxMkMyMCAxMS4yIDE5LjcgMTAuNCAxOS4xIDkuODk5OTVDMTguNyA5LjQ5OTk1IDE4LjcgOC44OTk5NSAxOS4xIDguNDk5OTVDMTkuNSA4LjA5OTk1IDIwLjEgOC4wOTk5NSAyMC41IDguNDk5OTVDMjEuNSA5LjM5OTk1IDIyIDEwLjcgMjIgMTJWMjJaIiBmaWxsPSIjNjY2NjY2Ii8+CjxwYXRoIGQ9Ik0yIDE4VjZDMiA0LjMgMy4zIDMgNSAzSDE1QzE2LjcgMyAxOCA0LjMgMTggNlYxMkMxOCAxMy43IDE2LjcgMTUgMTUgMTVINy4zTDIgMThaTTUgNUM0LjQgNSA0IDUuNCA0IDZWMTQuNkw2LjcgMTNIMTVDMTUuNiAxMyAxNiAxMi42IDE2IDEyVjZDMTYgNS40IDE1LjYgNSAxNSA1SDVaIiBmaWxsPSIjNjY2NjY2Ii8+Cjwvc3ZnPgo="
+                    alt="">
                 <span>گفت و گو</span>
             </a>
             <a class="d-flex justify-content-center align-items-center flex-column" href="">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDEyQzkuMiAxMiA3IDkuOCA3IDdDNyA0LjIgOS4yIDIgMTIgMkMxNC44IDIgMTcgNC4yIDE3IDdDMTcgOS44IDE0LjggMTIgMTIgMTJaTTEyIDRDMTAuMyA0IDkgNS4zIDkgN0M5IDguNyAxMC4zIDEwIDEyIDEwQzEzLjcgMTAgMTUgOC43IDE1IDdDMTUgNS4zIDEzLjcgNCAxMiA0WiIgZmlsbD0iIzY2NjY2NiIvPgo8cGF0aCBkPSJNMTggMjJDMTcuNCAyMiAxNyAyMS42IDE3IDIxQzE3IDE4LjIgMTQuOCAxNiAxMiAxNkM5LjIgMTYgNyAxOC4yIDcgMjFDNyAyMS42IDYuNiAyMiA2IDIyQzUuNCAyMiA1IDIxLjYgNSAyMUM1IDE3LjEgOC4xIDE0IDEyIDE0QzE1LjkgMTQgMTkgMTcuMSAxOSAyMUMxOSAyMS42IDE4LjYgMjIgMTggMjJaIiBmaWxsPSIjNjY2NjY2Ii8+CjxwYXRoIGQ9Ik0xOCAyMkMxNy40IDIyIDE3IDIxLjYgMTcgMjFDMTcgMTguMiAxNC44IDE2IDEyIDE2QzkuMiAxNiA3IDE4LjIgNyAyMUM3IDIxLjYgNi42IDIyIDYgMjJDNS40IDIyIDUgMjEuNiA1IDIxQzUgMTcuMSA4LjEgMTQgMTIgMTRDMTUuOSAxNCAxOSAxNy4xIDE5IDIxQzE5IDIxLjYgMTguNiAyMiAxOCAyMloiIGZpbGw9IiM2NjY2NjYiLz4KPC9zdmc+Cg==" alt="">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDEyQzkuMiAxMiA3IDkuOCA3IDdDNyA0LjIgOS4yIDIgMTIgMkMxNC44IDIgMTcgNC4yIDE3IDdDMTcgOS44IDE0LjggMTIgMTIgMTJaTTEyIDRDMTAuMyA0IDkgNS4zIDkgN0M5IDguNyAxMC4zIDEwIDEyIDEwQzEzLjcgMTAgMTUgOC43IDE1IDdDMTUgNS4zIDEzLjcgNCAxMiA0WiIgZmlsbD0iIzY2NjY2NiIvPgo8cGF0aCBkPSJNMTggMjJDMTcuNCAyMiAxNyAyMS42IDE3IDIxQzE3IDE4LjIgMTQuOCAxNiAxMiAxNkM5LjIgMTYgNyAxOC4yIDcgMjFDNyAyMS42IDYuNiAyMiA2IDIyQzUuNCAyMiA1IDIxLjYgNSAyMUM1IDE3LjEgOC4xIDE0IDEyIDE0QzE1LjkgMTQgMTkgMTcuMSAxOSAyMUMxOSAyMS42IDE4LjYgMjIgMTggMjJaIiBmaWxsPSIjNjY2NjY2Ii8+CjxwYXRoIGQ9Ik0xOCAyMkMxNy40IDIyIDE3IDIxLjYgMTcgMjFDMTcgMTguMiAxNC44IDE2IDEyIDE2QzkuMiAxNiA3IDE4LjIgNyAyMUM3IDIxLjYgNi42IDIyIDYgMjJDNS40IDIyIDUgMjEuNiA1IDIxQzUgMTcuMSA4LjEgMTQgMTIgMTRDMTUuOSAxNCAxOSAxNy4xIDE5IDIxQzE5IDIxLjYgMTguNiAyMiAxOCAyMloiIGZpbGw9IiM2NjY2NjYiLz4KPC9zdmc+Cg=="
+                    alt="">
                 <span>پروفایل</span>
             </a>
         </div>
     </div>
-    <footer>
+    <footer class="bg-white">
         <!-- part1 -->
         <div>
             <div class="container">
@@ -270,12 +291,12 @@
                                     بزرگ سیستان در باسلام کنار هم چیده شده. این‌جا با فروشنده‌ها و خریدارهای واقعی
                                     سروکار داری؛ نه انبارهای درندشت و بزرگ، چون باسلام بازار آدم‌هاست. هر محصولی
                                     که دنبالش بگردی توی این بازار هم عمده هم تکی در انواع مختلف و از شهرهای مختلف
-                                    پیدا می‌شه. تو باسلام راه ارتباط با همه آدم‌ها مثل هر بازار دیگه بازه. 
+                                    پیدا می‌شه. تو باسلام راه ارتباط با همه آدم‌ها مثل هر بازار دیگه بازه.
                                     تو این
                                     بازار از غرفه‌دارها خرید می‌کنی. این غرفه‌دارها از هر جایی از ایران حتی از هر
                                     جایی از جهان دارن محصولشون رو به شما می‌رسونن. امتیاز هر محصول و تجربه‌ای که
                                     مشتری‌های دیگه پای هر محصول ثبت کردن و یا گفت‌وگو با خود غرفه‌دارها و یا مشورت
-                                   
+
                                     با خریدارهای قبلی بهت کمک می‌کنه که بتونی محصول بهتری رو انتخاب کنی.
 
                                 </p>
