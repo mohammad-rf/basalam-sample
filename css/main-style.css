@@ -145,12 +145,22 @@ header .search-box--container{
 .mega-menu .mega-sidebar li:hover{
     background-color: #fff5f0;
 }
-/* mega-body */
+/* //////mega-body///// */
+
 .mega-menu .mega-body{
    max-height: 800px;
    width: 100%;
    overflow: auto;
 }
+/* items */
+.mega-body-item{
+   visibility: hidden;
+   height: 0;
+}
+.mega-body-item-acrive{
+   visibility: visible !important ;
+    height: auto !important;
+ }
 .mega-menu .mega-body-item ul{
     padding: 16px 20px;
 }
@@ -177,6 +187,8 @@ header .search-box--container{
 
 
 
+
+
 /*     /////   MAIN PART  ///// */
 /* sec banner1 */
 main{
@@ -191,9 +203,7 @@ main{
 .banner-slider-1 {
     margin-bottom: 48px;
 }
-.banner-slider-1 .image-cover {
-    
-}
+
 .banner-slider-1 img{
     object-fit: cover;
     width: 100%;
