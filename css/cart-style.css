@@ -1,0 +1,25 @@
+.tabs > div{
+    padding: 14.4px;
+    color: #ff5c39;
+}
+.tabs > div:first-child > span::before{
+    content: '';
+    width: 1px;
+    position: absolute;
+    left: 0;
+    height: 60%;
+    top: 20%;
+    background-color:var(--bs-gray-100);
+}
+.tabs > div > span::after{
+    content: '';
+    background-color: #ff5c39;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 4px;
+    width: 80%;
+}
+.body-basket div div img{
+    max-width: 300px;
+}

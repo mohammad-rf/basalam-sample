@@ -116,19 +116,19 @@ header .search-box--container{
     left: 8px;
     z-index: 900;
     display: none;
-    
 }
+    
 .mega-menu .mega-inner{
     min-height: 700px;
 }
 /* sidebar */
 .mega-menu .mega-sidebar {
+}
+
+.mega-menu .mega-sidebar > li{
     flex: 0 0 280px;
     min-width: 280px;
     border-left: 1px solid var(--bs-gray-100);
-}
-
-.mega-menu .mega-sidebar a{
     height: 3.5rem;
     font-size: 15px;
     padding: 0 24px 0 16px;
@@ -142,25 +142,24 @@ header .search-box--container{
     color: var(--bs-gray-500);
     margin-right: 32px;
 }
-.mega-menu .mega-sidebar li:hover{
+.mega-menu .mega-sidebar > li:hover{
     background-color: #fff5f0;
 }
-/* //////mega-body///// */
 
-.mega-menu .mega-body{
-   max-height: 800px;
-   width: 100%;
-   overflow: auto;
-}
 /* items */
-.mega-body-item{
-   visibility: hidden;
-   height: 0;
+ .mega-menu .mega-inner .mega-sidebar .mega-body-item{
+   /* visibility: hidden; */
+   /* height: 0; */
+   right: 280px;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   overflow: auto;
+   display: none !important;
 }
-.mega-body-item-acrive{
-   visibility: visible !important ;
-    height: auto !important;
- }
+.mega-menu .mega-inner .mega-sidebar > li:hover .mega-body-item {
+    display: flex !important;
+}
 .mega-menu .mega-body-item ul{
     padding: 16px 20px;
 }
@@ -179,24 +178,57 @@ header .search-box--container{
     font-weight: 500;
    
 }
-
 .mega-body-item li:hover{
     color: #ff5C39;
+    
+}
+/* madol login */
+header .modal-content{
+    min-height: 57vh;
+}
+header .modal .modal-logo{
+    background-color: #ff5C39 !important;
+    /* flex-grow: .4; */
+    width: 40%;
+}
+header .modal .modal-main{
+    padding: 56px 48px;
+    width: 60%;
+}
+.modal-logo div:last-child{
+    bottom: 7%;
 }
 
-
-
-
-
-
 /*     /////   MAIN PART  ///// */
-/* sec banner1 */
 main{
     margin: 21px 0 56px;
 }
 
-.banner-1{
-    margin-bottom: 42px;
+/* sec 2 sub-category */
+.sub-category{
+    display: flex; 
+    justify-content: space-around;
+    align-items: start;
+    overflow: auto;
+}
+.sub-category a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 7.5rem;
+}
+.sub-category div{
+    padding: 1.75rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sub-category a img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.sub-category span{
+    font-size: 12.5px;
 }
 
 /* salider 1 */
@@ -219,17 +251,50 @@ main{
 .carousel-indicators button .active{
     background-color: orange !important;
 }
+/* banner1 */
+.banner-1{
+    background-color: var(--bs-gray-100) !important;
+}
 
-
-
-
-
-
-
-
-
-
-
+/*  slider swiper */
+.swiper{
+   padding: 20px 30px !important;
+}
+.swiper-slide{
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-content: center !important; 
+    flex-direction: column;   
+    max-height: 470px; 
+}
+.video-slider{
+    height: 200px !important;
+    width: 100% !important;
+    background: url("https://statics.basalam.com/public-5/photo/explore/aN/05-23/v1UnmDwR6GHLP1GTXkgmuSSts4Rzzg8s2sakcLFaXFrYYU3j86.webp") ;
+    background-size:cover !important;
+}
+.swiper-slide:nth-child(2) .video-slider{
+    background: url("https://statics.basalam.com/public-5/photo/explore/aN/05-23/HMWiEbVwjYB2oSEFc5ObF8nESerboSVqJDowr7U12HAyoKQVPn.webp");
+}
+.swiper-slide:nth-child(3) .video-slider{
+    background: url("https://statics.basalam.com/public-5/photo/explore/aN/05-23/QnGwGwkCmgX0m8d2isPmB3VcrL4fjdYl6zjwGtRGyGxY32ysbr.webp");
+}
+   
+.video-bottom-slider {
+    width: 100% !important;
+}
+.video-bottom-slider p:first-child{
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.video-bottom-slider p:last-child{
+    height: 40px !important;
+    overflow: hidden;
+    font-size: 13px;
+}
 
 
 
