@@ -1,0 +1,145 @@
+
+.layout-shop{
+    grid-template-columns: repeat(1fr,12);
+}
+.shop-main{
+        grid-column: span 9 /span 9;
+}
+.shop-aside{
+    grid-column: span 3 / span 3;
+}
+.card{
+    border: 1px solid var(--bs-gray-200 ) !important;
+   width: 100% !important;
+   height: 100% !important;
+    /* min-width: 15rem !important; */
+}
+.card:hover{
+    border: .5px solid var(--bs-gray-500) !important;
+}
+.card .card-body > a{
+    font-size: 14px;
+}
+#shop-cards-rice >div{
+    padding: 0;
+}
+
+.card .card-subtitle{
+    font-size: 11px;
+    color: var(--bs-gray-600);
+}
+.card .card-price{
+    height: 5.125rem;
+}
+.card .card-price span span{
+    font-size: 8px;
+    color: var(--bs-gray-400);
+}
+.card .card-price > div > span:last-child{
+    font-size: 12px;
+    color: var(--bs-gray-600);
+}
+.card-price button{
+    background-color:#ff5c39;
+    font-size: 1.3rem;
+    width: 2rem;
+    height: 2rem;
+} 
+.card-price button:hover{
+    background-color: #c74f34;
+    color: white;
+}
+.card-price button:active , .card-price button:focus-visible{
+    background-color: #c74f34 !important;
+    color: white !important;
+    transform: scale(.95);
+}
+
+.card-link{
+    min-height: 3.5rem;
+}
+.card-link div{
+   height: fit-content;
+    font-size: 11.5px;
+    color: var(--bs-gray-700);
+    background-color: var(--bs-gray-200);
+    padding: 2px 4px;
+    margin-top: 4px;
+    border-radius: 4px;
+
+}
+.card-link div + div{
+    margin-inline-start: 6px;
+}
+
+/* aside */
+
+aside ul li {
+    /* font-size: 15px; */
+    margin-bottom: 12px;
+    width: 100%;
+    padding: 16px 24px;
+    background: white;
+}
+aside ul li{
+    display: flex!important;
+}
+/* sort type */
+
+.sort-type{
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+    height: 3rem;
+    font-size: 14px;
+}
+.sort-type ul{
+ padding: 16px 24px 0;
+}
+.sort-type li{
+    margin-right: 32px;
+    padding: 0 8px 14px;
+    position: relative;
+}
+.sort-type li:nth-child(2){
+    color: #ff5c39;
+
+}
+
+.sort-type li:nth-child(2) a::after{
+    content: '';
+    background-color: #ff5c39;
+    position: absolute;
+    bottom: 2px;
+    left: 10%;
+    height: 4px;
+    width: 80%;
+    transition:all .3 ;
+}
+/* غرفه ها محصولات */
+main{
+    margin-top: 0;
+}
+main > div:first-child{
+    padding: 14.4px;
+}
+main > div:first-child div:first-child{
+ color: #ff5c39;
+    border-left:.7px solid var(--bs-gray-200);
+}
+main > div:first-child div:first-child span::after{
+    content: '';
+    background-color: #ff5c39;
+    position: absolute;
+   top:calc(100% + 14.4px);
+    left: 10%;
+    height: 4px;
+    width: 80%;
+    transition:all .3 ;
+  }
+main > div:first-child > div{
+    height: 35px;
+    line-height: 35px;
+    color: var(--bs-gray-500);
+}
+    
+    

@@ -1,6 +1,8 @@
 .tabs > div{
     padding: 14.4px;
-    color: #ff5c39;
+    color: var(--bs-gray-00);
+    cursor: pointer;
+
 }
 .tabs > div:first-child > span::before{
     content: '';
@@ -19,7 +21,101 @@
     left: 10%;
     height: 4px;
     width: 80%;
+    visibility: hidden;
+    transition:all .3 ;
 }
-.body-basket div div img{
+.active{
+    color:#ff5c39 ;
+}
+.jquery{
+    background-color: aquamarine;
+}
+.tabs > div > .active::after{
+  visibility: visible;
+}
+
+.cart-empty img{
     max-width: 300px;
+}
+.shopping-cart .cart-item{
+    padding: 1.5rem;
+   background-color: white;
+}
+/* item */
+.cart-item > div:first-child span:last-child{
+    font-size: 12px;
+    font-weight: 500;
+    color:var(--bs-gray-900) ;
+}
+.cart-item{
+    margin-bottom: 12px;
+}
+.cart-item button{
+    font-size: 14px;
+}
+.cart-item > div:last-child{
+    padding-top: 1.5rem;
+}
+.cart-item > div:last-child a img{
+    width: 8rem;
+    height: 8rem;
+
+}
+.pluse-minuse{
+    background-color: var(--bs-gray-200) !important;
+    outline: 1px solid  var(--bs-gray-500);
+    min-width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.pluse-minuse .quantity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-price span:last-child{
+    font-size: 11px;
+}
+/*dynamic shoppin details */
+
+.price-details{
+    background-color: white;
+    text-align: center;
+    padding: 32px 24px 24px 24px;
+}
+.price-details > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 20px;
+}
+.price-details hr{
+    margin-inline: auto;
+    margin-block: 24px;
+    width: 60%;
+    height: 1px;
+    background-color: var(--bs-gray-500);
+}
+
+.price-details .off-product{
+    color:#ff5c39;
+}
+.price-details button{
+    background-color: #ff5c39;
+    margin-top: 32px;
+    border-radius: 8px;
+    color: white;  
+    width: 100%;
+    height: 3rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+    word-spacing: -4px;
+}
+
+
+.price-details button:hover{
+    background-color: #dc4523;
+    color: white;
+
 }
