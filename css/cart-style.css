@@ -97,7 +97,9 @@
     height: 1px;
     background-color: var(--bs-gray-500);
 }
-
+.price-details hr + .fw-bolder{
+    font-size: 18px;
+} 
 .price-details .off-product{
     color:#ff5c39;
 }
@@ -118,4 +120,22 @@
     background-color: #dc4523;
     color: white;
 
+}
+/* green text */
+.price-details  div:last-child{
+    color: green;
+    font-weight: bolder !important;
+    word-spacing: -3px;
+    text-align: start;
+}
+.price-details  div:last-child span{
+    /* padding: 1px; */
+    font-size: .8rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width:1.3rem;
+    height: 1.3rem;
+    border:2.3px solid green ;
+    border-radius: 50%;
 }

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="basalamabcdff">
     <link rel="stylesheet" href="css/main-style.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>با سلام</title>
@@ -21,7 +22,7 @@
                 <div class="top-header d-flex justify-content-between">
                     <div>
                         <div class="logo">
-                            <a href="/"><img src="image/basalam-logotype.svg" alt=""></a>
+                            <a href="/"><img src="image/basalam-logotype.svg" alt="/"></a>
                         </div>
                     </div>
                     <div>
@@ -52,7 +53,7 @@
             <div class="container position-relative">
                 <!-- header -->
                 <div class="top-header d-flex align-items-center">
-                    <a class="logo" href="">
+                    <a class="logo" href="/">
                         <img class="w-100" src="image/basalam-logotype.svg" alt="">
                     </a>
                     <div class="search-box--container me-auto">
@@ -60,15 +61,26 @@
                             <!-- modal -->
                             <div></div>
                             <!-- form -->
+
                             <div class="h-100 w-100">
                                 <form class="d-flex align-items-center rounded-1 w-100 h-100 " action="">
                                     <div class="opacity-75 px-12">
-                                        <button class="btn" type="submit">
+                                        <button  class="btn" type="submit">
                                             <i class="fa-solid fa-magnifying-glass"></i>
                                         </button>
                                     </div>
-                                    <input class="w-100 border-0" type="text" placeholder="جستجو در بازار">
+                                    <input  id="my-input" onkeyup="myFunction()" class="w-100 border-0" type="text" placeholder="جستجو در بازار">
+
                                 </form>
+                                <!--ul for search box  -->
+                               <!-- <ul id="my-ul">
+                                   <li><a href="">عسل</a></li>
+                                   <li> <a href="">قفقفف</a> </li>
+                                   <li><a href="">عسل</a></li>
+                                   <li> <a href="">عسل</a> </li>
+                                   <li><a href="">عسل</a></li>
+                                   <li> <a href="">عسل</a> </li>
+                               </ul> -->
                             </div>
                         </div>
                     </div>
@@ -84,7 +96,12 @@
                         <!-- buy -->
                         <div class=" buy text-center">
                             <a href="cart.html">
-                                <div class="mx-auto"><i class="fa-solid fa-cart-shopping fs-4"></i></div>
+                                <div class="mx-auto  position-relative">
+                                    <i id="total-amount-wrapper" class="fa-solid fa-cart-shopping fs-4 position-relative">
+                                        
+                                    </i>
+                                </div>
+
                                 <span class="mt-2 text-black">سبدخرید</span>
                             </a>
                         </div>
@@ -150,21 +167,30 @@
                                 </div>
                                 <!-- main part -->
                                 <div class="modal-main d-flex flex-column">
-                                    <div class="modal-header d-flex justify-content-end"><button
+
+                                    <div class="modal-header d-flex justify-content-end border-0"><button
                                             class="btn-close ms-auto" data-bs-dismiss="modal"></button></div>
+
                                     <h4 class="modal-title">ثبت نام / ورود</h4>
+
                                     <div class="d-flex flex-column mt-2">
                                         <p class="mb-2">لطفا شماره موبایل خود را وارد کنید</p>
                                         <form class="d-flex px-2 mb-2" action="">
                                             <span> شماره موبایل</span>
-                                            <input class="px-2" type="text">
+                                            <input class="px-2 w-100" type="text">
                                         </form>
                                         <p class=""> 
                                             مثال: ** ** *** ۰۹۱۲
                                         </p>
                                     </div>
-                                    <button></button>
-                                    <button></button>
+                                    <div class="d-flex"> 
+                                         <input class="me-2" type="checkbox">
+                                         <div class="text-spec">
+                                            با <span class="me-1">قوانین و مقررات باسلام </span>موافقم
+                                         </div>
+                                    </div>
+                                    <button type="submit">دریافت کد تایید</button>
+                                    <div><button  type="">ورود با کلمه عبور</button></div>
                                 </div>
                             </div>
                         </div>
@@ -203,183 +229,184 @@
                                     </div>
                                     <i class="fa-solid fa-angle-left"></i>
                                 </a>
-                                <div class="mega-body-item  position-absolute d-flex flex-wrap">
+                                <div class="mega-body-item mega-body-item-1 position-absolute d-flex flex-wrap">
                                     <ul>
-                                        <li><a href="">خوار و بار</a></li>
-                                        <li><a href="">برنج</a></li>
-                                        <li><a href="">حبوبات</a></li>
-                                        <li><a href="">سویا</a></li>
-                                        <li><a href="">روغن های خوراکی</a></li>
-                                        <li><a href="">قند و شکر</a></li>
-                                        <li><a href="">
+                                        <li><a href="products.html">آجیل وخشکبار</a></li>
+                                        <li><a href="products.html">آجیل</a></li>
+                                        <li><a href="products.html">خرما</a></li>
+                                        <li><a href="products.html">تخمه</a></li>
+                                        <li><a href="products.html">پسته</a></li>
+                                        <li><a href="products.html">گردو</a></li>
+                                        <li><a href="products.html">بادام هندی</a></li>
+                                        <li><a href="products.html">بادام درختی</a></li>
+                                        <li><a href="products.html">فندق</a></li>
+                                        <li><a href="products.html">میوه خشک</a></li>
+                                        <li><a href="products.html">کشمش ، نخودچی و مویز</a></li>
+                                        <li><a href="products.html">آلو خشک</a></li>
+                                        <li><a href="products.html">سنجد</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="products.html">خوار و بار</a></li>
+                                        <li><a href="products.html">برنج</a></li>
+                                        <li><a href="products.html">حبوبات</a></li>
+                                        <li><a href="products.html">سویا</a></li>
+                                        <li><a href="products.html">روغن های خوراکی</a></li>
+                                        <li><a href="products.html">قند و شکر</a></li>
+                                        <li><a href="products.html">
                                                 ماکارونی، پاستا و رشته
                                             </a></li>
-                                        <li><a href="">غلات</a></li>
-                                        <li><a href="">نان</a></li>
-                                        <li><a href="">آرد</a></li>
-                                        <li><a href="">
+                                        <li><a href="products.html">غلات</a></li>
+                                        <li><a href="products.html">نان</a></li>
+                                        <li><a href="products.html">آرد</a></li>
+                                        <li><a href="products.html">
                                                 سویق و پودر جوانه
                                             </a></li>
                                     </ul>
                                     <ul>
-                                        <li><a href="">آجیل وخشکبار</a></li>
-                                        <li><a href="">آجیل</a></li>
-                                        <li><a href="">خرما</a></li>
-                                        <li><a href="">تخمه</a></li>
-                                        <li><a href="">پسته</a></li>
-                                        <li><a href="">گردو</a></li>
-                                        <li><a href="">بادام هندی</a></li>
-                                        <li><a href="">بادام درختی</a></li>
-                                        <li><a href="">فندق</a></li>
-                                        <li><a href="">میوه خشک</a></li>
-                                        <li><a href="">کشمش ، نخودچی و مویز</a></li>
-                                        <li><a href="">آلو خشک</a></li>
-                                        <li><a href="">سنجد</a></li>
-                                    </ul>
-                                    <ul>
-                                        <li class=""><a href="" class="">
-                                                شیرینی و تنقلات
-                                            </a></li>
-                                        <li class=""><a href="" class="">
-                                                ترشک و لواشک
-                                            </a></li>
-                                        <li class=""><a href="" class="">
-                                                شکلات و آبنبات
-                                            </a></li>
-                                        <li class=""><a href="" class="">
-                                                کلوچه و نان شیرینی
-                                            </a></li>
-                                        <li class=""><a href="" class="">
-                                                سوهان
-                                            </a></li>
-                                        <li class=""><a href="" class="">
-                                                گز
-                                            </a></li>
-                                        <li class=""><a href="" class="">
-                                                نبات
-                                            </a></li>
-                                        <li class=""><a href="" class="">
-                                                شیرینی
-                                            </a></li>
-                                        <li class=""><a href="" class="">
-                                                کیک
-                                            </a></li>
-                                        <li class=""><a href="" class="">
-
-                                            </a></li>
-                                        <li class=""><a href="" class="">
-                                                دسر
-                                            </a></li>
-                                        <li class=""><a href="" class="">
-                                                حلوا
-                                            </a></li>
-                                    </ul>
-                                    <ul>
                                         <li><a class=""></a>
                                             ادویه و چاشنی
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 زعفران
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 زرشک
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 ادویه
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 رب ها
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 آبلیمو
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 آبغوره
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 سرکه
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 سس
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 خلال‌ها
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 نشاسته
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 سبزی خشک
                                             </a></li>
                                     </ul>
                                     <ul>
+                                        <li class=""><a href="products.html" class="">
+                                                شیرینی و تنقلات
+                                            </a></li>
+                                        <li class=""><a href="products.html" class="">
+                                                ترشک و لواشک
+                                            </a></li>
+                                        <li class=""><a href="products.html" class="">
+                                                شکلات و آبنبات
+                                            </a></li>
+                                        <li class=""><a href="products.html" class="">
+                                                کلوچه و نان شیرینی
+                                            </a></li>
+                                        <li class=""><a href="products.html" class="">
+                                                سوهان
+                                            </a></li>
+                                        <li class=""><a href="products.html" class="">
+                                                گز
+                                            </a></li>
+                                        <li class=""><a href="products.html" class="">
+                                                نبات
+                                            </a></li>
+                                        <li class=""><a href="products.html" class="">
+                                                شیرینی
+                                            </a></li>
+                                        <li class=""><a href="products.html" class="">
+                                                کیک
+                                            </a></li>
+                                        <li class=""><a href="products.html" class="">
 
-                                        <li><a href="">نوشیدنی </a></li>
-                                        <li><a href="">آبمیوه و شربت</a></li>
-                                        <li><a href="">چای</a></li>
-                                        <li><a href="">دمنوش</a></li>
-                                        <li><a href="">عرقیات</a></li>
-                                        <li><a href="">قهوه</a></li>
-                                        <li><a href="">محصولات کافیین دار</a></li>
-                                        <li><a href="">نوشابه</a></li>
-                                        <li><a href="">آب معدنی</a></li>
+                                            </a></li>
+                                        <li class=""><a href="products.html" class="">
+                                                دسر
+                                            </a></li>
+                                        <li class=""><a href="products.html" class="">
+                                                حلوا
+                                            </a></li>
+                                    </ul>
+                             
+                                    <ul>
+
+                                        <li><a href="products.html">نوشیدنی </a></li>
+                                        <li><a href="products.html">آبمیوه و شربت</a></li>
+                                        <li><a href="products.html">چای</a></li>
+                                        <li><a href="products.html">دمنوش</a></li>
+                                        <li><a href="products.html">عرقیات</a></li>
+                                        <li><a href="products.html">قهوه</a></li>
+                                        <li><a href="products.html">محصولات کافیین دار</a></li>
+                                        <li><a href="products.html">نوشابه</a></li>
+                                        <li><a href="products.html">آب معدنی</a></li>
                                     </ul>
                                     <ul>
-                                        <li><a href="">عسل و فراورده های عسل</a></li>
-                                        <li><a href="products-honey.html">عسل</a></li>
-                                        <li><a href="">فراورده های عسل</a></li>
-                                        <li><a href="">کره بوم</a></li>
-                                        <li><a href="">گرده گل</a></li>
+                                        <li><a href="products.html">عسل و فراورده های عسل</a></li>
+                                        <li><a href="products.html">عسل</a></li>
+                                        <li><a href="products.html">فراورده های عسل</a></li>
+                                        <li><a href="products.html">کره بوم</a></li>
+                                        <li><a href="products.html">گرده گل</a></li>
                                     </ul>
                                     <ul>
-                                        <li><a href="">آجیل وخشکبار</a></li>
-                                        <li><a href="">آجیل</a></li>
-                                        <li><a href="">خرما</a></li>
-                                        <li><a href="">تخمه</a></li>
-                                        <li><a href="">پسته</a></li>
-                                        <li><a href="">گردو</a></li>
-                                        <li><a href="">بادام هندی</a></li>
-                                        <li><a href="">بادام درختی</a></li>
-                                        <li><a href="">فندق</a></li>
-                                        <li><a href="">میوه خشک</a></li>
-                                        <li><a href="">کشمش ، نخودچی و مویز</a></li>
+                                        <li><a href="products.html">آجیل وخشکبار</a></li>
+                                        <li><a href="products.html">آجیل</a></li>
+                                        <li><a href="products.html">خرما</a></li>
+                                        <li><a href="products.html">تخمه</a></li>
+                                        <li><a href="products.html">پسته</a></li>
+                                        <li><a href="products.html">گردو</a></li>
+                                        <li><a href="products.html">بادام هندی</a></li>
+                                        <li><a href="products.html">بادام درختی</a></li>
+                                        <li><a href="products.html">فندق</a></li>
+                                        <li><a href="products.html">میوه خشک</a></li>
+                                        <li><a href="products.html">کشمش ، نخودچی و مویز</a></li>
 
                                     </ul>
                                     <ul>
                                         <li><a class=""></a>
                                             ادویه و چاشنی
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 زعفران
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 زرشک
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 ادویه
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 رب ها
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 آبلیمو
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 آبغوره
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 سرکه
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 سس
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 خلال‌ها
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 نشاسته
                                             </a></li>
-                                        <li><a href="" class="">
+                                        <li><a href="products.html" class="">
                                                 سبزی خشک
                                             </a></li>
                                     </ul>
@@ -396,11 +423,11 @@
                                 </a>
                                 <div class="mega-body-item  position-absolute d-flex flex-wrap">
                                     <ul>
-                                        <li><a href="">خوار و بار</a></li>
-                                        <li><a href="">برنج</a></li>
-                                        <li><a href="">حبوبات</a></li>
-                                        <li><a href="">سویا</a></li>
-                                        <li><a href="">روغن های خوراکی</a></li>
+                                        <li><a href="products.html">خوار و بار</a></li>
+                                        <li><a href="products.html">برنج</a></li>
+                                        <li><a href="products.html">حبوبات</a></li>
+                                        <li><a href="products.html">سویا</a></li>
+                                        <li><a href="products.html">روغن های خوراکی</a></li>
                                         <li><a href="">قند و شکر</a></li>
                                         <li><a href="">
                                                 ماکارونی، پاستا و رشته
@@ -517,7 +544,7 @@
                                     </ul>
                                     <ul>
                                         <li><a href="">عسل و فراورده های عسل</a></li>
-                                        <li><a href="products-honey.html">عسل</a></li>
+                                        <li><a href="">عسل</a></li>
                                         <li><a href="">فراورده های عسل</a></li>
                                         <li><a href="">کره بوم</a></li>
                                         <li><a href="">گرده گل</a></li>
@@ -588,7 +615,7 @@
                                 <div class="mega-body-item  position-absolute d-flex flex-wrap">
                                     <ul>
                                         <li><a href="">خوار و بار</a></li>
-                                        <li><a href="">برنج</a></li>
+                                        <li><a href="products-rice.html">برنج</a></li>
                                         <li><a href="">حبوبات</a></li>
                                         <li><a href="">سویا</a></li>
                                         <li><a href="">روغن های خوراکی</a></li>
@@ -708,7 +735,7 @@
                                     </ul>
                                     <ul>
                                         <li><a href="">عسل و فراورده های عسل</a></li>
-                                        <li><a href="products-honey.html">عسل</a></li>
+                                        <li><a href="">عسل</a></li>
                                         <li><a href="">فراورده های عسل</a></li>
                                         <li><a href="">کره بوم</a></li>
                                         <li><a href="">گرده گل</a></li>
@@ -779,7 +806,7 @@
                                 <div class="mega-body-item  position-absolute d-flex flex-wrap">
                                     <ul>
                                         <li><a href="">خوار و بار</a></li>
-                                        <li><a href="">برنج</a></li>
+                                        <li><a href="products-rice.html">برنج</a></li>
                                         <li><a href="">حبوبات</a></li>
                                         <li><a href="">سویا</a></li>
                                         <li><a href="">روغن های خوراکی</a></li>
@@ -899,7 +926,7 @@
                                     </ul>
                                     <ul>
                                         <li><a href="">عسل و فراورده های عسل</a></li>
-                                        <li><a href="products-honey.html">عسل</a></li>
+                                        <li><a href="">عسل</a></li>
                                         <li><a href="">فراورده های عسل</a></li>
                                         <li><a href="">کره بوم</a></li>
                                         <li><a href="">گرده گل</a></li>
@@ -2813,7 +2840,7 @@
                     alt="">
             </div>
         </sec>
-        <!-- slider video -->
+        <!-- slider video swiper-->
         <sec>
             <div class="container">
                 <div class="swiper mySwiper">
@@ -2821,8 +2848,27 @@
                         <div class="swiper-slide shadow-sm p-4">
                             <!-- video  -->
                             <div class="video-slider">
+                                <span class="wrapper-play">
+                                    <i class="fa-solid fa-play"></i>
+                                </span>
                                 <span class="">
-                                    <i class="bi-play"></i>
+                                    00:30
+                                </span>
+                            </div>
+                            <!-- video bottom -->
+                            <div class="video-bottom-slider p-3">
+                                <p>لوستر و مبلمان چوبی گل نیلوفری</p>
+                                <p class="mb-2">
+                                    آقای مسگر توی کار چوبه. شصت هفتاد درصد مبلمان و لوسترهاشون طرح‌های مشتری‌هاست. چون
+                                    معتقده کار باید به دل مشتری بشینه.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide shadow-sm p-4">
+                            <!-- video  -->
+                            <div class="video-slider">
+                                <span class="wrapper-play">
+                                    <i class="fa-solid fa-play"></i>
                                 </span>
                                 <span>
                                     00:30
@@ -2840,27 +2886,8 @@
                         <div class="swiper-slide shadow-sm p-4">
                             <!-- video  -->
                             <div class="video-slider">
-                                <span class="">
-                                    <i class="bi-play"></i>
-                                </span>
-                                <span>
-                                    00:30
-                                </span>
-                            </div>
-                            <!-- video bottom -->
-                            <div class="video-bottom-slider p-3">
-                                <p>لوستر و مبلمان چوبی گل نیلوفری</p>
-                                <p class="mb-2">
-                                    آقای مسگر توی کار چوبه. شصت هفتاد درصد مبلمان و لوسترهاشون طرح‌های مشتری‌هاست. چون
-                                    معتقده کار باید به دل مشتری بشینه.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide shadow-sm p-4">
-                            <!-- video  -->
-                            <div class="video-slider">
-                                <span class="">
-                                    <i class="bi-play"></i>
+                                <span class="wrapper-play">
+                                    <i class="fa-solid fa-play"></i>
                                 </span>
                                 <span>
                                     00:30
@@ -2916,7 +2943,7 @@
                     alt="">
                 <span>بازارگردی</span>
             </a>
-            <a class="d-flex justify-content-center align-items-center flex-column" href="">
+            <a class="d-flex justify-content-center align-items-center flex-column" href="cart.html">
                 <img src="https://statics.basalam.com/resources/img/shopping-cart.3b5608a.svg" alt="">
                 <span>سبدخرید</span>
             </a>
@@ -2936,10 +2963,10 @@
         <!-- part1 -->
         <div>
             <div class="container">
-                <div>
+                <div class="row align-items-center justify-content-between mb-lg-5">
                     <!-- 4 mini boxes -->
-                    <div class="py-4 px-2 row">
-                        <div class="main-item px-2 mb-md-2 text-center col-6">
+                    <div class="py-4 px-2 col-lg-7 row">
+                        <div class="main-item px-2 mb-md-2 text-center col-6 col-lg-3">
                             <div class="image-item d-flex align-items-center mx-auto">
                                 <img class="w-100 object-fit-contain d-block"
                                     src="https://statics.basalam.com/public/admin/V0YKZ/12-28/NyQPngXZblKmRt3CvJ2pNzVS2P2WXpZwa4xWDVLRFVVf1KR6dZ.svg"
@@ -2949,7 +2976,7 @@
                                 پرداخت امن از درگاه بانکی
                             </span>
                         </div>
-                        <div class="main-item px-2 mb-md-2 text-center col-6">
+                        <div class="main-item px-2 mb-md-2 text-center col-6 col-lg-3">
                             <div class="image-item mx-auto d-flex align-items-center">
                                 <img class="w-100 object-fit-contain"
                                     src="https://statics.basalam.com/public/admin/V0YKZ/12-28/NyQPngXZblKmRt3CvJ2pNzVS2P2WXpZwa4xWDVLRFVVf1KR6dZ.svg"
@@ -2959,7 +2986,7 @@
                                 پرداخت امن از درگاه بانکی
                             </span>
                         </div>
-                        <div class="main-item px-2 mb-md-2 text-center col-6">
+                        <div class="main-item px-2 mb-md-2 text-center col-6 col-lg-3">
                             <div class="image-item d-flex align-items-center mx-auto">
                                 <img class="w-100 object-fit-contain d-block"
                                     src="https://statics.basalam.com/public/admin/V0YKZ/12-28/NyQPngXZblKmRt3CvJ2pNzVS2P2WXpZwa4xWDVLRFVVf1KR6dZ.svg"
@@ -2969,7 +2996,7 @@
                                 پرداخت امن از درگاه بانکی
                             </span>
                         </div>
-                        <div class="main-item px-2 mb-md-2 text-center col-6">
+                        <div class="main-item px-2 mb-md-2 text-center col-6 col-lg-3">
                             <div class="image-item mx-auto d-flex align-items-center">
                                 <img class="w-100 object-fit-contain"
                                     src="https://statics.basalam.com/public/admin/V0YKZ/12-28/NyQPngXZblKmRt3CvJ2pNzVS2P2WXpZwa4xWDVLRFVVf1KR6dZ.svg"
@@ -2981,7 +3008,7 @@
                         </div>
                     </div>
                     <!-- app -->
-                    <div class="px-12 text-center">
+                    <div class="px-12 text-center col-lg-4">
                         <a class="text-secondary-emphasis fs-4 fw-bold" href="">نصب اپلیکیشن باسلام</a>
                         <div class="mt-2">
                             <a class="" class="" href=""><img class=""
@@ -2992,8 +3019,9 @@
                         </div>
                     </div>
                 </div>
+                <hr class="d-none d-lg-block">
                 <!-- accordion -->
-                <div class="accordion accordion-flush mt-md-4 ">
+                <div class="accordion accordion-flush mt-md-4 d-lg-none ">
                     <div class="accordion-item">
                         <div class="accordion-header border-bottom">
                             <button type="button" class="accordion-button  collapsed text-black"
@@ -3050,13 +3078,50 @@
 
                     </div>
                 </div>
-                <hr class="d-none d-md-block">
+                <hr class="d-none d-md-block d-lg-none">
                 <!-- responsive prt (includes two parts) -->
-                <div class="responsive mt-md-2 pt-md-4 ">
+                <div class="responsive mt-md-2 pt-md-4 d-flex justify-content-between  ">
+                    <!-- appear when d-lg insted accordion -->
+                    <div class="d-none d-lg-flex col-7 row">
+                        <div class="col-3 ">
+                            <img src="https://statics.basalam.com/public/admin/V0YKZ/12-25/YrfyhaNtfRAwDx4oazcmGSS8Ik1Pry6xVBLXaZ2fsDCQ90wgMT.svg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <ul class="p-0">
+                                <li class="pb-4">پشتیبانی</li>
+                                <li class="my-1"><a class=" fw-normal py-2 " href="#">سوالات متداول</a></li>
+                                <li class="my-1"><a class=" fw-normal py-2" href="#">تماس با ما</a></li>
+                                <li class="my-1"><a class=" fw-normal py-2" href="#">پیگیری سفارش ها</a></li>
+                                <li class="my-1"><a class=" fw-normal py-2" href="#">گزارش خطای فنی</a></li>
+                                <li class="my-1"><a class=" fw-normal py-2" href="#">گزارش امکانات جدید</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <ul class="p-0 ">
+                                <li class="pb-4">با سلام</li>
+                                <li class="my-1"><a class=" fw-normal py-2" href="#"> مجله باسلام</a></li>
+                                <li class="my-1"><a class=" fw-normal py-2" href="#"> داستان باسلام</a></li>
+                                <li class="my-1"><a class=" fw-normal py-2" href="#"> فرصت های شغلی</a></li>
+                                <li class="my-1"><a class=" fw-normal py-2" href="#"> چطوری به باسلام اعتماد کنم</a></li>
+                                <li class="my-1"><a class=" fw-normal py-2" href="#">گزارش امکانات جدید</a></li>
+                                <li class="my-1"><a class=" fw-normal py-2" href="#">گزارش خطای فنی</a></li>
+                                <li class="my-1"><a class=" fw-normal py-2" href="#">گزارش امکانات جدید</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <ul class="p-0">
+                                <li class="pb-4">خرید و فروش</li>
+                                <li class="my-1"><a class=" fw-normal py-2" href="#"> فروش در باسلام</a></li>
+                                <li class="my-1"><a class=" fw-normal py-2" href="#"> کیف پول من </a></li>
+                                <li class="my-1"><a class=" fw-normal py-2" href="#">  مدیریت غرفه</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
                     <!-- email input -->
-                    <div class="px-4 ">
+                    <div class="px-4 px-lg-0 ms-lg-auto ">
                         <div class="mb-md-2">
-                            <p class="m-0 fw-bold">
+                            <p class="m-0 fw-bold mb-1">
                                 ایمیلتان را وارد کنید تا از تخفیف‌ها باخبر شوید.
                             </p>
                         </div>
@@ -3081,14 +3146,16 @@
                     <!-- desktop -->
                     <div></div>
                 </div>
+
             </div>
         </div>
         <!-- part2 -->
         <div class="etemad">
             <div class="container">
-                <div class="row flex-column">
+                <hr class="d-none d-lg-block my-5">
+                <div class="row flex-column flex-lg-row-reverse">
                     <!-- part1 namad ha -->
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 order-lg-">
                         <div class="footer-namad d-flex justify-content-between  align-items-center my-md-2">
                             <div class="d-flex">
                                 <img class="w-100" title="انجمن کسب و کار های اینترنتی"
@@ -3111,9 +3178,9 @@
                         </div>
                     </div>
                     <!-- part2 long paragraph -->
-                    <div class="col-sm-6">
+                    <div class="col-sm-6  order-1">
                         <div class="footer-paragraph">
-                            <h1>باسلام، بازار بی‌مرز</h1>
+                            <h1 class="">باسلام، بازار بی‌مرز</h1>
                             <div class="">
                                 <p class="fw-normal">
                                     یک بازار برای خرید و فروش محصولات مختلف با کیفیت و قیمت‌های متفاوته. باسلام
@@ -3147,22 +3214,14 @@
     </footer>
 
 
-    <script>
-        megaMenuEl = document.getElementById('mega-menu')
-        megaMenuBtn = document.getElementById("mega-btn")
-
-        let fu =() => {
-            
-            megaMenuBtn.addEventListner('mouseenter', () => console.log('hey'))
-        };
-      fu();
-    </script>
+   
 
     <script src="https://kit.fontawesome.com/d8a8e61b83.js" crossorigin="anonymous"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="lib/jQuery/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
+    
 
     <script>
         var swiper = new Swiper(".mySwiper", {

@@ -79,6 +79,12 @@ header .search-box--container{
 .header-desktop input::placeholder{
     font-size: 12.6px;
 }
+.header-desktop input:focus{
+    
+    border: none;
+    outline: none;
+}
+
 .header-desktop .login-signup{
     margin: 0 20px;
     height: 3.25rem;
@@ -86,6 +92,18 @@ header .search-box--container{
 .header-desktop .buy{
     margin-inline-start: 20px;
     height: 3.25rem;
+}
+header .badge {
+    padding: 0;
+    background-color:#ff5C39;
+    top: -4px;
+    right:-3px;
+    font-size: 14px;
+    min-width: 14px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .login-signup span , .buy span{
     font-size: 14px;
@@ -157,6 +175,8 @@ header .search-box--container{
    overflow: auto;
    display: none !important;
 }
+
+
 .mega-menu .mega-inner .mega-sidebar > li:hover .mega-body-item {
     display: flex !important;
 }
@@ -190,8 +210,20 @@ header .search-box--container{
 
 
 /* madol login */
+.modal{
+    overflow: hidden !important;
+    background-color:rgba(0, 0, 0, 0.5) ;
+}
+.modal-dialog{
+    min-width: 780px !important;
+    min-height: 100vh !important;
+    display: flex;
+    align-items: center;
+    /* width: 700px !important; */
+    
+}
 header .modal-content{
-    min-height: 60vh;
+    min-height: 70vh;
     
 }
 header .modal .modal-logo{
@@ -199,15 +231,9 @@ header .modal .modal-logo{
    flex-grow: .4;
    
 }
-.modal-dialog{
-    max-width: 900px !important;
-    max-width: 700px;
-    
-}
 header .modal .modal-main{
     padding: 56px 48px !important;
-    flex-grow: .6;
-    
+    flex-grow: .6; 
 }
 .modal-logo div:last-child{
     bottom: 7%;
@@ -231,15 +257,53 @@ header .modal .modal-main{
     outline: none;
     direction: ltr;
 }
+.modal form input:focus{
+    border-color: #ff5C39;
+}
 .modal-main form+p{
     font-size: 11px;
     color: var(--bs-gray-500);
 }
 
+.modal input:checked{
+    background-color: #ff5C39 !important;
+}
+.text-spec{
+    font-size: 12px;
+    margin-top: 18px;
+    margin-bottom: 24px;
+}
+.text-spec span{
+    font-size: 12px;
+    color: #3086d1;
+    border-bottom: 1px dashed #3086d1;
+}
+.modal button[type='submit']{
+    margin-top: 2rem;
+    padding: 0 1rem;
+    font-weight: bold;
+    background-color: var(--bs-gray-200);
+    color: var(--bs-gray-500);
+    outline: none;
+    border: none;
+    height: 52px;
+    border-radius: 10px;
+}
+
+.modal-main button:last-child{
+font-weight: bold;
+display: inline !important;
+background-color: white;
+border: none;
+word-spacing: -4px;
+margin-top: 20px;
+padding: 0 4px;
+}
 
 
-
-
+.modal-main button:last-child:hover{
+    color: #ff5C39;
+}
 
 
 
@@ -315,16 +379,40 @@ main{
     max-height: 470px; 
 }
 .video-slider{
+    position: relative;
     height: 200px !important;
     width: 100% !important;
     background: url("https://statics.basalam.com/public-5/photo/explore/aN/05-23/v1UnmDwR6GHLP1GTXkgmuSSts4Rzzg8s2sakcLFaXFrYYU3j86.webp") ;
     background-size:cover !important;
 }
+.video-slider .wrapper-play{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color:rgba(255, 255, 255, 0.35);
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    bottom: 5%;
+    right: 7%;
+}
+.fa-play{
+    font-size: 1.4rem;
+    color: white;
+}
+.video-slider .wrapper-play + span{
+    position: absolute;
+    color: white;
+    bottom: 5%;
+    left: 7%;
+}
+
 .swiper-slide:nth-child(2) .video-slider{
     background: url("https://statics.basalam.com/public-5/photo/explore/aN/05-23/HMWiEbVwjYB2oSEFc5ObF8nESerboSVqJDowr7U12HAyoKQVPn.webp");
 }
 .swiper-slide:nth-child(3) .video-slider{
-    background: url("https://statics.basalam.com/public-5/photo/explore/aN/05-23/QnGwGwkCmgX0m8d2isPmB3VcrL4fjdYl6zjwGtRGyGxY32ysbr.webp");
+    background: url("https://statics.basalam.com/public-5/photo/explore/aN/06-07/p4prsJpw4RYX9In31exDVCOzFfzRvJ95Q1hK1zqaIFPjZEW9oe.webp");
 }
    
 .video-bottom-slider {
@@ -394,6 +482,11 @@ footer .container > div:last-child > div:first-child p {
    font-size: 14px;
     
 }
+@media  (min-width : 992px) {
+    .responsive{
+        margin-bottom: 64px;
+    }
+}
 footer .responsive form input {
     direction: rtl;
     outline: none;
@@ -408,7 +501,14 @@ footer .responsive button {
     margin-inline: 7px;
     /* line-height: 1.6rem; */
 }
-
+footer .responsive li:first-child{
+    font-weight: bold;
+    font-size: 18px;
+}
+footer .responsive li a{
+    font-size: .85rem;
+    color: var(--bs-gray-800) !important;
+} 
 footer .follow-us{
     margin-top: 35px;
 }
@@ -440,6 +540,12 @@ footer .footer-namad > div {
 .footer-paragraph h1{
    font-size: 14px;
    padding-block: 14px;
+}
+@media (min-width:992px){
+    .footer-paragraph h1{
+        font-weight: bold;
+        font-size: 17px;
+    }
 }
 .footer-paragraph > div > p{
     margin-bottom: 14px;
@@ -484,3 +590,26 @@ footer .footer-last > div:last-child{
     font-weight: 500;
     color: var(--bs-gray-600);
 }
+
+
+
+/* //// search filter js */
+
+  #my-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  #my-ul  ul li {
+    display: none;
+  }
+  #my-ul li a {
+    border: 1px solid #ddd; 
+    margin-top: -1px; 
+    padding: 12px; 
+    font-size: 14px;  
+    display: block; 
+  }
+  #my-ul li a:hover:not(.header) {
+    background-color: #eee;
+  }
