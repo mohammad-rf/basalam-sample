@@ -1,7 +1,5 @@
 
 $(function () {
-    
-
 
     let megaMenu = $('.mega-menu')
     let megaBtn = $('#mega-btn')
@@ -24,22 +22,46 @@ $(function () {
     })
     
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     // number in cart icon
      basket = JSON.parse(localStorage.getItem('data')) || [];
 
 
     let calculation = () => {
         let cartIcon = document.getElementById("total-amount-wrapper");
-        let amount =  basket.map((x) => x.item).reduce((x, y) => x + y, 0)
 
+        let amount =  basket.map((x) => x.item).reduce((x, y) => x + y, 0)
         if(amount !== 0){
             cartIcon.innerHTML = `<span class="badge position-absolute rounded-0 transl">${amount}</span>`;
         }
-        else return;
+        else cartIcon.innerHTML =``;
        
       };
     
     calculation();
+
+
 
 
 

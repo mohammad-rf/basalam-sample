@@ -1,7 +1,6 @@
 let shop = document.getElementById('cards')
-
-
 let basket = JSON.parse(localStorage.getItem('data')) || [];
+
 
 let generateShopItems = () => {
   

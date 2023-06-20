@@ -126,16 +126,14 @@ const update = (id) => {
 
 
 
-
-
-// shop price details second part of cart 
+// cart details second part of cart 
 
 const generatePriceDetails = () => {
     const priceDetails = document.getElementById('price-details-wrapper');
     
     
     if (basket.length !== 0) {
-            let a= $('#cart-wrapper').addClass('col-lg-8')
+           $('#cart-wrapper').addClass('col-lg-8')
             let amount = basket
             .map((x) => {
               let filterData = shopItemData.find((y) => y.id === x.id );  
@@ -176,7 +174,14 @@ const generatePriceDetails = () => {
                                                 </div>    
                                             </div>`);     
         
-        } else return;                                    
+        }
+         else{
+            priceDetails.innerHTML = ``;
+            $('#cart-wrapper').removeClass('col-lg-8')                                    
+
+            
+        }
+            
     
 
   
